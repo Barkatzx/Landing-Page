@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aria Wild @ariawild</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @font-face {
+        font-family: "Graphik";
+        src: url("/font/Graphik-Regular.woff2") format("woff2");
+      }
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 10px;
+        overflow-x: auto;
+        transition: transform 0.5s ease;
+      }
+      .social-icons::-webkit-scrollbar {
+        display: none;
+      }
+      .navbar {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 50%; /* Adjust to center the navbar horizontally */
+        transform: translateX(-50%); /* Centering trick */
+        width: 100%;
+        max-width: 600px; /* Adjust as needed */
+        background-color: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 10px 20px;
+        z-index: 1000;
+        transition: top 0.3s;
+      }
+
+      .navbar.active {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar .left {
+        display: flex;
+        align-items: center;
+      }
+      .navbar .right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .navbar img.profile-pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .navbar img.verified {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+      }
+      .navbar img.share {
+        width: 24px;
+        height: 24px;
+      }
+      .navbar img.social-icon {
+        width: 24px;
+        height: 24px;
+      }
+    </style>
+  </head>
+  <!-- Navbar Section Start Here -->
+  <body class="bg-black Graphik">
+    <div class="navbar" id="navbar">
+      <div class="left">
+        <img src="/img/img (6).jpg" alt="Profile Picture" class="profile-pic" />
+        <span>Aria Wild</span>
+        <img src="/img/social/verified.svg" alt="Verified" class="verified" />
+      </div>
+      <div class="right">
+        <img src="/img/social/share.png" alt="Share" class="share" />
+      </div>
+    </div>
+    <!-- Navbar Section End Here -->
+
+    <!-- Header Section Start Here -->
+    <div class="container mx-auto flex flex-col justify-center items-center">
+      <div class="relative w-full max-w-md">
+        <img
+          src="/img/img (6).jpg"
+          alt="Aria Wild"
+          class="w-full h-auto rounded-lg shadow-lg"
+        />
+        <div
+          class="absolute bottom-0 left-0 w-full bg-black bg-opacity-50 text-white p-4 text-center rounded-b-lg"
+        >
+          <div class="text-lg font-bold flex items-center justify-center">
+            Aria Wild
+            <img
+              src="/img/social/verified.svg"
+              alt="Verified"
+              class="w-5 h-5 ml-2"
+            />
+          </div>
+          <div class="text-slate-300 font-bold">@ariawild</div>
+          <div class="mt-2 social-icons">
+            <!-- Social Icons -->
+            <a
+              href="https://onlyfans.com/ariawild11"
+              target="_blank"
+              class="hover:text-gray-300"
+            >
+              <img
+                src="/img/social/OnlyFans-2.png"
+                alt="OnlyFans"
+                class="w-8 h-8 rounded-full bg-white p-1"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/aria.wild/?igshid=YmMyMTA2M2Y%3D"
+              target="_blank"
+              class="hover:text-gray-300"
+            >
+              <img
+                src="/img/social/Instagram-2.png"
+                alt="Instagram"
+                class="w-8 h-8 rounded-full bg-white p-1"
+              />
+            </a>
+            <a
+              href="https://www.paypal.com/paypalme/wildwoman11?locale.x=en_GB"
+              target="_blank"
+              class="hover:text-gray-300"
+            >
+              <img
+                src="/img/social/paypall.png"
+                alt="Paypal"
+                class="w-8 h-8 rounded-full bg-white p-1"
+              />
+            </a>
+            <a
+              href="https://x.com/ariawild90?s=11"
+              target="_blank"
+              class="hover:text-gray-300"
+            >
+              <img
+                src="/img/social/twitter-dark-2.png"
+                alt="Twitter"
+                class="w-8 h-8 rounded-full bg-white p-1"
+              />
+            </a>
+            <a
+              href="https://www.luxylist.it/ariawild"
+              class="hover:text-gray-300"
+              target="_blank"
+            >
+              <img
+                src="/img/social/luxylist.jpg"
+                alt="Luxylist"
+                class="w-8 h-8 rounded-full bg-white p-1"
+              />
+            </a>
+            <a
+              href="https://www.tiktok.com/@aria.wild90"
+              target="_blank"
+              class="hover:text-gray-300"
+            >
+              <img
+                src="/img/social/TikTok-2.png"
+                alt="TikTok"
+                class="w-8 h-8 rounded-full bg-white p-1"
+              />
+            </a>
+            <a
+              href="https://www.amazon.co.uk/hz/wishlist/ls/6YWO49IDV0L5?ref_=wl_share"
+              target="_blank"
+              class="hover:text-gray-300"
+            >
+              <img
+                src="/img/social/amazon.jpg"
+                alt="Amazon"
+                class="w-8 h-8 rounded-full bg-white p-1"
+              />
+            </a>
+            <a
+              href="https://www.hi2owater.co.uk/?ref="
+              target="_blank"
+              class="hover:text-gray-300"
+            >
+              <img
+                src="/img/social/hi2o.png"
+                alt="Threads"
+                class="w-8 h-8 rounded-full bg-white p-1"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header Section End Here -->
+
+    <!-- Text Section Add Here -->
+    <div class="md:mx-auto lg:my-0 md:my-0 lg:max-w-sm md:max-w-3xl">
+      <!-- Your content goes here -->
+      <div
+        class="bg-slate-900 p-2 font-bold rounded-lg text-center mt-1 text-white"
+      >
+        Cris Cyborg vs Aria Wild - 15th June!
+      </div>
+      <!-- Add more content as needed -->
+    </div>
+    <!-- Text Section End Here -->
+    <!-- Only Fans Card 1 -->
+    <div class="container mx-auto max-w-md mt-1">
+      <div class="relative">
+        <!-- Card Image -->
+        <a href="https://onlyfans.com/ariawild11" target="_blank">
+          <img
+            src="/img/img (1).jpg"
+            alt="Your Image"
+            class="w-full rounded-lg shadow-lg"
+            style="height: auto; max-height: 300px; object-fit: cover"
+          />
+        </a>
+        <!-- OnlyFans Icon -->
+        <a href="https://onlyfans.com/ariawild11" target="_blank">
+          <img
+            src="/img/social/OnlyFans-2.png"
+            alt="OnlyFans"
+            class="absolute top-0 right-0 mt-2 mr-2 w-8 h-8"
+          />
+        </a>
+        <!-- Title -->
+        <div
+          class="absolute bottom-0 left-0 w-full text-white p-4 rounded-b-lg"
+        >
+          <h2 class="text-xl text-center font-bold mb-2 uppercase">
+            Vip OnlyFans 50% Off Now
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- Only Fans Card 1 -->
+    <!-- Only Fans Card 2 -->
+    <div class="container mx-auto max-w-md mt-1">
+      <div class="relative">
+        <!-- Card Image -->
+        <a
+          href="https://www.axs.com/uk/events/556243/cfn-off-chain-1-tickets?skin=indigo"
+          target="_blank"
+        >
+          <img
+            src="/img/ticket.jpeg"
+            alt="Ticket"
+            class="w-full rounded-lg shadow-lg"
+            style="height: auto; max-height: 300px; object-fit: cover"
+          />
+        </a>
+        <!-- OnlyFans Icon -->
+        <a
+          href="https://www.axs.com/uk/events/556243/cfn-off-chain-1-tickets?skin=indigo"
+          target="_blank"
+        >
+          <img
+            src="img/social/broken-link.png"
+            alt="OnlyFans"
+            class="absolute top-0 right-0 mt-2 mr-2 w-8 h-8"
+          />
+        </a>
+        <!-- Title -->
+        <div
+          class="absolute bottom-0 left-0 w-full text-white p-4 rounded-b-lg"
+        >
+          <h2 class="text-xl text-center font-bold mb-2 uppercase text-red-800">
+            Fight Tickets
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- Only Fans Card 2 -->
+    <!-- Only Fans Card 3 -->
+    <div class="container mx-auto max-w-md mt-1">
+      <div class="relative">
+        <!-- Card Image -->
+        <a
+          href="https://kronk.co.uk/?gad_source=1&gclid=CjwKCAjw_LOwBhBFEiwAmSEQATeudaBuWbTYO1q_horPX7WxYaNxWuVnXq6GzC8V5qb7_unGchuNyRoCPP0QAvD_BwE"
+          target="_blank"
+        >
+          <img
+            src="/img/img (9).jpg"
+            alt="Aria Wild"
+            class="w-full rounded-lg shadow-lg"
+            style="height: auto; max-height: 300px; object-fit: cover"
+          />
+        </a>
+        <!-- OnlyFans Icon -->
+        <a
+          href="https://kronk.co.uk/?gad_source=1&gclid=CjwKCAjw_LOwBhBFEiwAmSEQATeudaBuWbTYO1q_horPX7WxYaNxWuVnXq6GzC8V5qb7_unGchuNyRoCPP0QAvD_BwE"
+          target="_blank"
+        >
+          <img
+            src="/img/social/broken-link.png"
+            alt="OnlyFans"
+            class="absolute top-0 right-0 mt-2 mr-2 w-8 h-8"
+          />
+        </a>
+        <!-- Title -->
+        <div
+          class="absolute bottom-0 left-0 w-full text-white p-4 rounded-b-lg"
+        >
+          <h2 class="text-xl text-center font-bold mb-2 uppercase">
+            50% Off Now
+          </h2>
+        </div>
+      </div>
+    </div>
+    <!-- Only Fans Card 3 -->
+
+    <!-- More Link With Flex Start 1 -->
+    <div class="container mx-auto max-w-md mt-1 flex justify-between">
+      <!-- First Image -->
+      <div class="relative flex-1 mr-1">
+        <!-- Card Image -->
+        <a href="https://onlyfans.com/ariawild11" target="_blank">
+          <img
+            src="/img/img (1).jpg"
+            alt="Your Image"
+            class="w-full rounded-lg shadow-lg"
+            style="height: auto; max-height: 200px; object-fit: cover"
+          />
+        </a>
+
+        <!-- OnlyFans Icon -->
+        <a href="https://onlyfans.com/ariawild11" target="_blank">
+          <img
+            src="/img/social/OnlyFans-2.png"
+            alt="OnlyFans"
+            class="absolute top-0 right-0 mt-2 mr-2 w-8 h-8"
+          />
+        </a>
+        <!-- Title -->
+        <div
+          class="absolute bottom-0 left-0 w-full text-white p-4 rounded-b-lg"
+        >
+          <h2 class="text-center font-bold mb-2">Vip OnlyFans</h2>
+        </div>
+      </div>
+
+      <!-- Second Image -->
+      <div class="relative flex-1 ml-1">
+        <!-- Card Image -->
+        <a
+          href="https://musclemend.shop/?sca_ref=6165235.R0pyMa6XSD"
+          target="_blank"
+        >
+          <img
+            src="/img/img (2).jpg"
+            alt="Aria Wild"
+            class="w-full rounded-lg shadow-lg"
+            style="height: auto; max-height: 200px; object-fit: cover"
+          />
+        </a>
+        <!-- OnlyFans Icon -->
+        <a
+          href="https://musclemend.shop/?sca_ref=6165235.R0pyMa6XSD"
+          target="_blank"
+        >
+          <img
+            src="/img/social/broken-link.png"
+            alt="Link"
+            class="absolute top-0 right-0 mt-2 mr-2 w-8 h-8"
+          />
+        </a>
+
+        <!-- Title -->
+        <div
+          class="absolute bottom-0 left-0 w-full text-white p-4 rounded-b-lg"
+        >
+          <h2 class="text-center font-bold mb-2">Premium Available</h2>
+        </div>
+      </div>
+    </div>
+    <!-- More Link With Flex End 1 -->
+    <!-- More Link With Flex Start 2 -->
+    <div class="container mx-auto max-w-md mt-1 flex justify-between">
+      <!-- First Image -->
+      <div class="relative flex-1 mr-1">
+        <!-- Card Image -->
+        <a href="https://www.tiktok.com/@aria.wild90" target="_blank">
+          <img
+            src="/img/img (3).jpg"
+            alt="Your Image"
+            class="w-full rounded-lg shadow-lg"
+            style="height: auto; max-height: 200px; object-fit: cover"
+          />
+        </a>
+        <!-- OnlyFans Icon -->
+        <a href="https://www.tiktok.com/@aria.wild90" target="_blank">
+          <img
+            src="/img/social/TikTok-2.png"
+            alt="Tiktok"
+            class="absolute top-0 right-0 mt-2 mr-2 w-8 h-8"
+          />
+        </a>
+        <!-- Title -->
+        <div
+          class="absolute bottom-0 left-0 w-full text-white p-4 rounded-b-lg"
+        >
+          <h2 class="text-center font-bold mb-2">Vip OnlyFans</h2>
+        </div>
+      </div>
+
+      <!-- Second Image -->
+      <div class="relative flex-1 ml-1">
+        <!-- Card Image -->
+        <a
+          href="https://www.instagram.com/aria.wild/?igshid=YmMyMTA2M2Y%3D"
+          target="_blank"
+        >
+          <img
+            src="/img/img (4).jpg"
+            alt="Aria Wild"
+            class="w-full rounded-lg shadow-lg"
+            style="height: auto; max-height: 200px; object-fit: cover"
+          />
+        </a>
+        <!-- OnlyFans Icon -->
+        <a
+          href="https://www.instagram.com/aria.wild/?igshid=YmMyMTA2M2Y%3D"
+          target="_blank"
+        >
+          <img
+            src="/img/social/Instagram-2.png"
+            alt="Instagram"
+            class="absolute top-0 right-0 mt-2 mr-2 w-8 h-8"
+          />
+        </a>
+        <!-- Title -->
+        <div
+          class="absolute bottom-0 left-0 w-full text-white p-4 rounded-b-lg"
+        >
+          <h2 class="text-center font-bold mb-2">Premium Available</h2>
+        </div>
+      </div>
+    </div>
+    <!-- More Link With Flex End 2 -->
+    <!-- More Link With Flex Start 3 -->
+    <div class="container mx-auto max-w-md mt-1 flex justify-between">
+      <!-- First Image -->
+      <div class="relative flex-1 mr-1">
+        <!-- Card Image -->
+        <a href="https://twitter.com/ariawild90?s=11" target="_blank">
+          <img
+            src="/img/img (5).jpg"
+            alt="Your Image"
+            class="w-full rounded-lg shadow-lg"
+            style="height: auto; max-height: 200px; object-fit: cover"
+          />
+        </a>
+        <!-- OnlyFans Icon -->
+        <a href="https://twitter.com/ariawild90?s=11" target="_blank">
+          <img
+            src="/img/social/twitter-dark-2.png"
+            alt="OnlyFans"
+            class="absolute top-0 right-0 mt-2 mr-2 w-8 h-8"
+          />
+        </a>
+        <!-- Title -->
+        <div
+          class="absolute bottom-0 left-0 w-full text-white p-4 rounded-b-lg"
+        >
+          <h2 class="text-center font-bold mb-2">Vip OnlyFans</h2>
+        </div>
+      </div>
+
+      <!-- Second Image -->
+      <div class="relative flex-1 ml-1">
+        <!-- Card Image -->
+        <a href="https://www.luxylist.it/ariawild" target="_blank">
+          <img
+            src="/img/img (7).jpg"
+            alt="Your Image"
+            class="w-full rounded-lg shadow-lg"
+            style="height: auto; max-height: 200px; object-fit: cover"
+          />
+        </a>
+        <!-- OnlyFans Icon -->
+        <a href="https://www.luxylist.it/ariawild" target="_blank">
+          <img
+            src="/img/social/luxylist.jpg"
+            alt="Luxylist"
+            class="absolute top-0 right-0 mt-2 mr-2 w-8 h-8"
+          />
+        </a>
+        <!-- Title -->
+        <div
+          class="absolute bottom-0 left-0 w-full text-white p-4 rounded-b-lg"
+        >
+          <h2 class="text-center font-bold mb-2">Premium Available</h2>
+        </div>
+      </div>
+    </div>
+    <!-- More Link With Flex End 3 -->
+
+    <!-- Gallery Slider Starts -->
+    <div class="container mx-auto max-w-md mt-1 flex justify-between">
+      <!-- Picture Slider -->
+      <div class="flex gap-2">
+        <!-- Slide 1 -->
+        <div class="relative">
+          <img
+            class="w-32 h-24 rounded-lg"
+            src="/img/img (9).jpg"
+            alt="Slide 1"
+          />
+        </div>
+        <!-- Slide 2 -->
+        <div class="relative">
+          <img
+            class="w-32 h-24 rounded-lg"
+            src="/img/img (10).jpg"
+            alt="Slide 2"
+          />
+        </div>
+        <!-- Slide 3 -->
+        <div class="relative">
+          <img
+            class="w-32 h-24 rounded-lg"
+            src="/img/img (12).jpg"
+            alt="Slide 3"
+          />
+        </div>
+        <div class="relative">
+          <img
+            class="w-32 h-24 rounded-lg"
+            src="/img/img (13).jpg"
+            alt="Slide 3"
+          />
+        </div>
+        <div class="relative">
+          <img
+            class="w-32 h-24 rounded-lg"
+            src="/img/img (14).jpg"
+            alt="Slide 3"
+          />
+        </div>
+        <!-- Add more slides here -->
+      </div>
+    </div>
+
+    <!-- Gallery Slider End -->
+    <script src="/script.js"></script>
+  </body>
+</html>
