@@ -1,4 +1,4 @@
-## Aria WIld
+## Aria Wild
 
 Introducing Aria Wild Front End Website 2.0, a sleek and refined iteration with several enhancements aimed at elevating user experience and visual appeal.
 
@@ -7,6 +7,8 @@ Introducing Aria Wild Front End Website 2.0, a sleek and refined iteration with 
 - Style Changes: We've revamped the aesthetic of the website with a fresh new look, incorporating modern design elements to captivate and engage visitors.
 
 - Poppins Bold Font: Say hello to enhanced readability and a touch of sophistication with the addition of Poppins Bold font, striking a perfect balance between elegance and clarity.
+
+<img src="./img/cover.png" alt="Aria Wild" />
 
 - Animation: Prepare to be mesmerized as subtle yet dynamic animations breathe life into the interface, offering a delightful browsing experience that seamlessly guides users through the content.
 
